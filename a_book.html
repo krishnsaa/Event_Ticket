@@ -20,18 +20,18 @@
     <main>
         <section class="event-form">
             <h1>Book Your Event Ticket</h1>
-            <form id="ticket-form">
+            <form action="connect.php" method="POST">
                 <div class="form-group">
                     <label for="event">Select Event:</label>
-                    <select id="event" name="event" required>
-                        <option value="">Aarohan</option>
+                    <select id="event" name="Event">
+                        <option value="Arohan">Aarohan</option>
 
                     </select>
                 </div>
 
                 <div class="form-group">
                     <label for="seat-type">Select Seat Type:</label>
-                    <select id="seat-type" name="seat-type" required>
+                    <select id="seat-type" name="Seat" required>
                         <option value="">Choose seat type</option>
                         <option value="vip">VIP</option>
                         <option value="regular">Regular</option>
@@ -41,31 +41,31 @@
 
                 <div class="form-group">
                     <label for="name">Full Name:</label>
-                    <input type="text" id="name" name="name" required>
+                    <input type="text" id="name" name="Name" required>
                 </div>
 
                 <div class="form-group">
                     <label for="reg-number">Registration Number:</label>
-                    <input type="text" id="reg-number" name="reg-number" required>
+                    <input type="text" id="reg-number" name="Reg" required>
                 </div>
 
                 <div class="form-group">
                     <label for="price">Ticket Price:</label>
-                    <input type="text" id="price" name="price" value="₹0" readonly>
+                    <input type="text" id="price" name="Price" value="₹0" readonly>
                 </div>
 
                 <div class="form-group">
                     <label for="payment-method">Payment Method:</label>
-                    <select id="payment-method" name="payment-method" required>
+                    <select id="payment-method" name="Method" required>
                         <option value="">Choose payment method</option>
-                        <option value="credit-card">Credit Card</option>
-                        <option value="paypal">PayPal</option>
-                        <option value="bank-transfer">Bank Transfer</option>
+                        <option value="qr">QR code</option>
+                        <option value="cash">Cash(on Counter deposit)</option>
+
                     </select>
                 </div>
 
                 <div class="form-group">
-                    <button type="submit">Pay Now</button>
+                    <button type="submit">Next</button>
                 </div>
             </form>
         </section>
